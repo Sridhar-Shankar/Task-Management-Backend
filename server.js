@@ -8,7 +8,7 @@ const cors = require("cors")
 const dotenv = require("dotenv")
 dotenv.config()
 app.use(cors({
-    origin: 'https://task-management-frontend-ruddy.vercel.app'  
+   "*"  
 }));
 
 app.use(bodyParser.urlencoded({extended:false}))
