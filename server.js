@@ -13,7 +13,7 @@ app.use(cors({
 
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(process.env.MONGO_URI)
 .then(() => {console.log("database connected")})
 .catch(() => {console.log("database not connected");})
 
